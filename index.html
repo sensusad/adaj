@@ -15,6 +15,24 @@
 body {
   background-image: url('https://radioaj.com.np/images/radio.jpg');
 }
+scroll-container {
+        overflow: hidden;
+        white-space: nowrap;
+        font-size: 18px;
+      }
+      
+      /* Set the style for the scrolling text */
+      .scroll-text {
+        display: inline-block;
+        padding-right: 100%;
+        animation: marquee 15s linear infinite;
+      }
+      
+      /* Set the animation for the scrolling text */
+      @keyframes marquee {
+        0%   { transform: translate(0, 0); }
+        100% { transform: translate(-100%, 0); }
+      }
 
 </style>
 </head>
@@ -40,11 +58,10 @@ body {
     </audio>
         </div> </h1>
 
-<div>
-<h1> <center> <a href="https://www.muktinathbank.com">
-  <img src="mukti.gif" width="413px" height="278px" alt="Muktinath Bikas Bank">
-                    </a> </h1> </center>
-</div>
+div class="scroll-container">
+      <div class="scroll-text">
+        Muktinath Bikas Bank: Aashirvad Bachat Khata with Special Interest Rate and Free Debit Card along with Free Mobile Banking | Shuddhta ko Pratik, J J  Jewellers | Kanchanjunga Agarbatti, Gayatri Agarbatti Udhyog ko ek utkrista utpadan | Nepal Telecom: Rastra ko Sanchar |
+      </div>
 
 
 
